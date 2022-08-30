@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/linearLayout"
+    android:id="@+id/mainLayout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,6 +16,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quickabdest"
+            android:letterSpacing="0.4"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
         <ImageButton
             android:id="@+id/pepe"
             app:srcCompat="@drawable/close"
@@ -28,16 +38,31 @@
             android:focusable="true"
             android:contentDescription="Pepe" />
 
-        <TextView
-            android:id="@+id/textView"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="quickabdest"
-            android:letterSpacing="0.4"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:textColor="#E91E63" />
+            android:layout_height="wrap_content">
 
+            <TextView
+                android:id="@+id/normalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="abdest almak için "
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/emphaticText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tıkla"
+                android:letterSpacing="0.4"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#E91E63" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
