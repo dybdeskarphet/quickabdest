@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/pepe"
+            app:srcCompat="@drawable/close"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:onClick="clickPepe"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:focusable="true"
+            android:contentDescription="Pepe" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quickabdest"
+            android:letterSpacing="0.4"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#E91E63" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        android:layout_marginBottom="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_github"
+            android:contentDescription="GitHub"
+            app:tint="#A1A1A1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:onClick="clickGithub"
+            android:layout_marginEnd="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:focusable="true" />
+
+        <ImageView
+            android:src="@drawable/ic_website"
+            android:contentDescription="Website"
+            app:tint="#A1A1A1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:onClick="clickWebsite"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/darkToggle"
+            android:contentDescription="Dark Mode"
+            android:src="@drawable/ic_moon"
+            app:tint="#A1A1A1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:onClick="darkModeToggle"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>
